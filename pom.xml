@@ -38,4 +38,20 @@
 </properties>
 </profile>
 </profiles>
+<build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+         </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>nexus</id>
+      <url>http://130.211.215.96:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
