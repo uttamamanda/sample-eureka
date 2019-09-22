@@ -9,7 +9,13 @@ pipeline{
 		stage('Sonar'){
 			steps {
 				sh "mvn sonar:sonar"
+				docker build -t uttamamanda/dockerapp:aug23 
 			}
+		}
+		stage('Docker Build'){
+			steps {
+				sh "docker build -t eurekaserver:latest"
+				}
 		}   
 	}
 }
