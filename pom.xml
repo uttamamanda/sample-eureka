@@ -17,11 +17,15 @@
         <module>eureka-server</module>
     </modules>
 	<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
+	  <dependencies>
+	
 <dependency>
 <groupId>org.sonarsource.scanner.maven</groupId>
 <artifactId>sonar-maven-plugin</artifactId>
 <version>3.2</version>
 </dependency>
+  </dependencies>
+
 <profiles>
 <profile>
 <id>sonar</id>
