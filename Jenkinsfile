@@ -23,11 +23,11 @@ pipeline{
 			}
 		}
 		
-		/*stage('Docker Push'){
+		stage('Docker Push'){
 		steps{
 		sh "docker tag eurekaserver:latest 130.211.215.96:8081/repository/eurekaserver"
 		sh "docker push 130.211.215.96:8081/repository/eurekaserver"
 		}
-		} */  
+		}   
 	}
 }
