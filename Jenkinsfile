@@ -18,6 +18,7 @@ pipeline{
 		}
 		stage('Nexus Upload'){
 			steps{
+			sh "cd eureka-server"
 			sh "mvn deploy"
 			}
 		}   
