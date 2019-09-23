@@ -11,9 +11,9 @@
     <name>Spring cloud eureka example parent</name>
 
     <modules>
-        <module>customer-interface</module>
+        <!-- <module>customer-interface</module>
         <module>customer-service</module>
-        <module>customer-client-service</module>
+        <module>customer-client-service</module> -->
         <module>eureka-server</module>
     </modules>
 	<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
